@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"defer></script>
+    <title>Register form </title>
+</head>
+<body>
+    <header>
+        <div class= "header">
+        <h1>Register to join our coffee lover family!</h1>
+        </div>
+    </header>
+
+    <main>
+        <form class="register" action="/register" method="POST">
+            <label class="register_label">
+                <span class="name">Name: *</span>
+                <input type="text" class="register_name" name="name" placeholder="Enter your name">
+                <span class="error_message">Name is required</span>
+            </label>
+
+            <label class="register_label">
+                <span class="email">Email: *</span>
+                <input type="text" class="register_email" name="email" placeholder="Enter your email" >
+                <span class="error_message"></span>
+            </label>
+
+            <label class="register_label">
+                <span class="confirmEmail">Confirm Email: *</span>
+                <input type="text" class="register_confirm" name="confirmEmail" placeholder="Enter your email again" >
+                <span class="error_message"></span>
+            </label>
+
+            <label class="register_label">
+                <span class="wants-spam">Do you want us to send you annoying emails?</span>
+                <input type="checkbox" class="register_spam" name="wants-spam"  checked>
+            </label>
+
+
+            <label class="register_label">
+                <span class="tier">Choose your tier:</span>
+                <select class="register_tier" name="tier" >
+                    <option value="" selected>Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+            </label>
+            
+            <button type="submit" class="focus_button">Register</button>
+            
+        </form>
+    </main>
+
+    <footer class="footer">                 
+        <div class="footer_links">
+            <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a>
+        </div>
+        <div class="footer_links">
+            <a href="https://www.sanjoseca.gov/your-government/departments-offices/animal-care-services/services/pet-adoption/adopt-a-dog">Find a place</a>
+        </div>
+        <div class="footer_links">
+        <a href="https://www.starbucks.com/store-locator?map=37.23915,-121.777815,11z&place=95138">Contact us</a>
+        </div>
+        <div class="footer_links">
+            <a href="https://www.starbucks.com/store-locator?map=37.23915,-121.777815,11z&place=95138">Support</a>
+        </div>
+
+    </footer>
+</body>
+</html>

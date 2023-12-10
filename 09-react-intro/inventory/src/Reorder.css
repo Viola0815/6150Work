@@ -1,0 +1,23 @@
+.reorder-container {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .reorder-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #b7c23b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .reorder-button:hover {
+    background-color: orange;
+    outline: black solid 2px;
+  }
+  

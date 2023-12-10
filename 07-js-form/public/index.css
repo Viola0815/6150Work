@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+.footer {
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    padding: 20px;
+}
+.footer_links{
+    grid-column: span 3;
+    font-size: 0.8rem; 
+}
+.footer_links a{
+    color: #f0f0f0;
+}
+
+.footer_links a:hover {
+    border:2px solid #333;
+    background-color:bisque;
+    color: #333;
+}
+ 
+.register_label{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    outline: solid #f0f0f0 1px;
+    padding: 20px;
+    border-radius: 8px;
+}
+span{
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.focus_button {
+    margin: 0 auto; 
+    display: block; 
+    background-color: #333;
+    color: white;
+    border:none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.register {
+    background-color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px;
+}
+  
+  .register_name, .register_email, .register_confirm, .register_tier {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register_spam {
+    margin-top: 7px;
+  }
+  
+
+  
+  .error_message {
+    color: red;
+    display: none;
+  }
+  
+  .error_message.open {
+    display: block;
+    grid-column: 2;
+    outline: red solid 2px;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    border-radius: 5px;
+    
+  }
+  
+
+  @media (max-width: 40rem) {
+    .register_label {
+      display: block;
+    }
+    .error_message.open{
+        display: block;
+        font-size: small;
+        width: 150px; 
+        margin-top:10px ;
+        margin-left: 0%;
+        padding: 10px;
+        text-align:center;
+        border-radius: 5px; 
+    }
+
+    .footer_links {
+        margin: 0.5rem 0; 
+        text-align: center; 
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+  }
+  

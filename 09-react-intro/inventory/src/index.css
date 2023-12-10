@@ -1,0 +1,12 @@
+@keyframes reorder-container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reorder-container {
+  animation: reorder-container 2s ease-in-out;
+}
