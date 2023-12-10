@@ -1,0 +1,24 @@
+body{
+  font-family:sans-serif;
+}
+.title-buttons-container{
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 10px; 
+  display: flex;
+  justify-content: center; 
+    
+}
+.buttons {
+  display: flex;
+  gap: 300px;
+  }
+
+
+.content{
+    background-color: rgb(215, 228, 245);
+    text-align: center;  
+}
+
+
+

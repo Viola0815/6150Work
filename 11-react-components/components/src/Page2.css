@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    border-radius: 100%;
+}
+img {
+    margin: 1rem 1rem 1rem 1rem; 
+    float: right;
+    width: 180px;
+    height: 180px;
+  }
+ .text {
+    line-height: 1.2rem;
+    padding: 25px;
+    
+  }

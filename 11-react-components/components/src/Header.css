@@ -1,0 +1,25 @@
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color:antiquewhite;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    align-items: center;
+}
+
+.header h1{
+    grid-column: span 11;
+}
+.logo{
+    justify-self: start;
+    grid-column: span 1;
+    height: 80px;
+    width: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
