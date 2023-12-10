@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    font-family:"Lucida Calligraphy", cursive, serif, sans-serif;;
+    line-height: 1.5;
+    font-size: 20px;
+}
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(237, 251, 236);
+   
+}
+.HeaderLogoAndText{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:1rem;
+}
+
+.HeaderLogoAndText img{
+    grid-column: span 3;
+    height: 150px;
+    width: fit-content;
+}
+.HeaderLogoAndText h1{
+    display: flex;
+    grid-column: span 10;
+    justify-content: center;
+    align-items: center;
+}
+.Menu{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: relative;
+}
+#Dropdown {
+    list-style: none;
+    background-color: rgb(190, 208, 233);
+    cursor: pointer;
+}
+.DropdownContent {
+    display: none;
+    position:absolute;
+    top: 100%;
+    background-color: rgb(190, 208, 233);
+    transition: max-height 0.3s ease-in;
+   
+   
+}
+.DropdownContent a{
+    outline: black solid 1px;
+    padding: 20px;
+}
+.DropdownContent a:hover{
+    background-color: bisque;
+}
+.open {
+    display: flex; 
+    flex-direction: column;
+    line-height:3;
+    padding: 10px 20px;
+    background-color: rgb(246, 246, 205);
+}
+.Card1 img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+.Card2 img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+.Card3 img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding:20px ;
+    background-color: rgb(215, 228, 245);
+    outline: black solid 1px;
+    
+}
+
+.Card1{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 0.8rem;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    align-items: center; 
+    justify-content: center;
+    
+}
+.Card2{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 0.8rem;
+    background-color: aliceblue;
+    border-radius: 100%;
+    align-items: center; 
+    justify-content: center;
+    
+}
+.Card3{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 0.8rem;
+    background-color: rgb(243, 250, 199);
+    border-radius: 100%;
+    align-items: center; 
+    justify-content: center;
+}
+
+.Main h3,h4,h5{
+    font-size:1rem;
+}
+.Card1 h3, .Card2 h4, .Card3 h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border: 5px;
+    
+}
+.Card1 p, .Card2 p, .Card3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px;
+}
+.Card1 a,.Card2 a,.Card3 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: bisque;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    outline: orange solid 1px;
+    
+
+}
+
+.ReadMore{
+    margin-top: auto;
+    border-radius: 0 0 4px 4px; 
+    color: black;
+    
+ 
+}
+.Card1 a:hover, .Card2 a:hover, .Card3 a:hover {
+    background-color: rgb(254, 254, 5);
+    color: brown;
+}
+
+.FooterLinks {
+    display: grid;
+    background-color: rgb(237, 251, 236);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+.FooterLink a:hover {
+    background-color: bisque;
+}
+.FooterLink {
+    display: flex;
+    grid-column: span 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.6rem;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    color: white;
+    border:none;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 50rem) {
+    .Cards {
+        grid-template-columns: 1fr;
+    }
+    .FooterLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .FooterLink {
+        margin: 0.5rem 0; 
+        text-align: center; 
+    }
+}
