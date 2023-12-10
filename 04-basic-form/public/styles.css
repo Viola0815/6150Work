@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerlogoandtext {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+.headerlogoandtext h1 {
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    grid-column: span 1;
+}
+header {
+    background-color: rgb(237, 231, 224);
+    
+}
+img {
+    width: 450px; 
+    height: 200px; 
+    opacity: 0.8;
+}
+.headerlogoandtext img:first-child {
+    display: none;
+}
+
+.headerlogoandtext img:last-child {
+    justify-self: end;
+}
+
+body {
+    font-family:  "Lucida Calligraphy", cursive, serif, sans-serif;
+    background-color: #f0f0f0;
+}
+main {
+    background-color: #f9f0f0;
+    
+    padding: 20px;
+    
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="name"], input[type="email"] {
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+.footer_links{
+    grid-column: span 3;
+    font-size: 0.8rem;
+}
+.footer_links a:hover {
+    border:2px solid #333;
+    background-color: rgb(254, 254, 5);
+    color: brown;
+}
+.footer_links:focus-within{
+    border: 2px solid #333;
+    background-color: orange;
+}
+
+form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 10px; 
+}
+label {
+        padding: 10px;
+        text-align: left; 
+}
+
+input[type="name"],
+input[type="email"]{
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    
+}
+
+
+
+button[type="submit"] {
+    grid-column:span 2; 
+    place-self: center;
+    background-color: #333;
+    color: white;
+    border:none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type="name"]:focus,
+input[type="email"]:focus,
+select:focus{
+    outline: 2px solid rgb(0, 0, 0);   
+}
+
+.focus-button:focus{
+    outline: 3px solid rgb(255, 242, 0); 
+}
+
+
+@media (max-width: 767px) {
+    form {
+        display: inline-block;
+    }
+    label {
+        width: 100%;
+    }
+    select {
+        width: 100%; 
+        padding: 10px;
+        border: 1px solid #9c9292;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    button[type="submit"] {
+        display: block;
+        margin: 0 auto; 
+    }
+    .headerlogoandtext h1 {
+        grid-column: span 3;
+    }
+    .headerlogoandtext {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    img {
+        display: none;
+    }
+    .headerlogoandtext img:first-child {
+    display: flex;
+    width: 200px; 
+    height: 200px; 
+    
+    }
+
+    input[type="checkbox"] {
+        margin:0 auto;  
+        display: block;
+
+        
+    }
+    .footer_links {
+        margin: 0.5rem 0; 
+        text-align: center; 
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+}
