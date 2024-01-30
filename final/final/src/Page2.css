@@ -1,0 +1,17 @@
+.content{
+    display: flex;
+    border-radius: 100%;
+}
+
+ .text {
+    line-height: 1.2rem;
+    padding: 25px;
+  }
+
+  .winter-photo{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  

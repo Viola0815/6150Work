@@ -1,0 +1,61 @@
+dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    max-width: 400px;
+    padding: 20px;
+    top: 50%; 
+    left: 50%; 
+    position: fixed;
+    transform: translate(-50%, -50%); 
+  }
+
+  label{
+    display: flex;
+    padding: 10px;
+  }
+  .bts{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+  }
+  .bts Button{
+    grid-column: span 6;
+    
+  }
+input{
+  width: 500px;
+}
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+  }
+
+
+.visible {
+    display: flex;
+}
+  
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 44rem) {
+  dialog{
+    max-width: 260px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,45 @@
+
+.filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    position: relative;
+    margin-right: 25px;
+    padding: 5px 12px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      align-items: center; 
+      gap: 20px; 
+    }
+    
+    .filter-buttons button::before {
+      content: ' ';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      position: absolute;
+      left: -15px; 
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .filter-buttons button.selected::before {
+      background-color: red; 
+      border-color: red;
+    }
+    
