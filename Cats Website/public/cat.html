@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats Pages</title>
+    <link rel="stylesheet" href="cat.css">
+    <script src="cat.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="skiptocontent" href="#card1" class="skip-link">Skip to content</a>
+        <div class="logoAndText">
+            <a href="index.html">
+                <img src="http://placekitten.com/100/100" alt="Main Logo for Famous Internet Cats" aria-label="Main Logo for Famous Internet Cats">
+            </a>
+            <h1>Famous Internet Cats</h1>
+        </div>
+        <nav class="Menu">
+            <ul>     
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="cat.html" aria-label="Famous Cat">Famous Cat</a></li>
+                <li><a href="" aria-label="Cat Events">Cat Events</a></li>
+            </ul> 
+        </nav>
+        <div class="dropdown-menu">
+            <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="drpdown-content">
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="cat.html" aria-label="Famous Cat">Famous Cat</a></li>
+                <li><a href="" aria-label="Cat Events">Cat Events</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cards">
+            <div class="card1" id="card1" role="article">
+                <h2 class="card-title">Jenny</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Jenny the cat" aria-label="Image of Jenny the cat">
+                <p>When it comes to famous internet cats, Jenny is one of the most well-known. She's a graceful, carnivorous (meat-eating) mammal with sharp teeth and claws.</p> 
+                <p><a id="subscribe-link1" href="#" aria-label="Subscribe to Jenny's updates">Subscribe</a> Jenny also starred in the Harry Potter series, where the role was played by four different Maine Coon cats (three of which were rescued).</p>
+            </div>
+
+            <div class="card2" role="article">
+                <h2 class="card-title">Jorts</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Jorts the cat" aria-label="Image of Jorts the cat">
+                <p>If it’s famous cats in movies you’re after, <a id="subscribe-link2" href="#" aria-label="Subscribe to Jorts's updates">Subscribe</a> Orangey is your guy. Most famed for his role as ‘Cat’ in Breakfast at Tiffany’s, starring alongside Audrey Hepburn.</p> 
+                <p>Graceful, carnivorous (meat-eating) mammals with sharp teeth and claws. Orangey was such a great actor that he won the Patsy award twice.</p>
+            </div>
+
+            <div class="card3" role="article">
+                <h2 class="card-title">Sawyer</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Sawyer the cat" aria-label="Image of Sawyer the cat">
+                <p>Graceful, carnivorous (meat-eating) mammals with sharp teeth and claws. As it usually is with famous cats in movies. <a id="subscribe-link3" href="#" aria-label="Subscribe to Sawyer's updates">Subscribe</a>.</p> 
+                <p>Mr. Jinx was played by several different cats. The Himalayans used to play the parts have earned their name as one of the most comedic cats in cinematic history, you’ll know why.</p>
+            </div>   
+
+            <div class="card4" role="article">
+                <h2 class="card-title">Lily</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Lily the cat" aria-label="Image of Lily the cat">
+                <p>It's a love that's expressed through serene smiles. Graceful, carnivorous (meat-eating) mammals with sharp teeth and claws.</p>
+                <p>Everyone’s heard of this adorable famous cat. <a id="subscribe-link4" href="#" aria-label="Subscribe to Lily's updates">Subscribe</a>. Graceful, carnivorous (meat-eating) mammals with sharp teeth and claws.</p>
+            </div>
+
+            <div class="card5" role="article">
+                <h2 class="card-title">Jimmy</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Jimmy the cat" aria-label="Image of Jimmy the cat">
+                <p>This cat’s name is almost as funny as his film appearance! Known as Dr. Evil’s hairless Sphynx Cat from the Austin Powers movies, this famous cat was apparently a big fan of Mike Myers, despite his owner being his arch nemesis in the series. It’s been reported that Ted loved Mike so much, <a id="subscribe-link5" href="#" aria-label="Subscribe to Jimmy's updates">Subscribe</a> that he would spend all of his time sleeping on his lap.</p>
+            </div>
+
+            <div class="card6" role="article">
+                <h2 class="card-title">Jack</h2>
+                <img src="http://placekitten.com/200/200" alt="Image of Jack the cat" aria-label="Image of Jack the cat">
+                <p>There’s just something about cats, isn’t there? <a id="subscribe-link6" href="#" aria-label="Subscribe to Jack's updates">Subscribe</a> Their magical toe beans and saucer-like eyes have captivated humans across the globe throughout history, and we just can’t get enough of them. Cute cats fill our screens, and this, combined with our obsession with their adorable fluffy faces, has seen the rise of famous cats.</p>
+            </div>
+        </div>
+        <div id="Modal" class="modal">
+            <div class="modal-content">
+                
+                <h3>Subscribe to the Latest Mews!</h3>
+                <form class="subscribe" action="/subscribe" method="POST">
+                    <label class="register_label">
+                        <span class="email">Email: *<span class="hint">required</span></span>
+                        <input type="text" id="email" class="email" placeholder="Email" >
+                        <span class="error_message"></span>
+                    </label>
+                    <label class="register_label">
+                        <span class="confirmEmail">Confirm Email: *<span class="hint">required</span></span>
+                        <input type="text" id="confirmEmail" class="confirmEmail" placeholder="Confirm Email" >
+                        <span class="error_message"></span>
+                    </label>
+
+                    <div class="buttons-container">
+                        <button type="submit" id="subscribeButton">Subscribe</button>
+                        <button id="closingSymbol">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_links">
+            <div class="footer_link">
+                <a href="#" aria-label="Contact Information">Contact Information</a>
+            </div>
+            <div class="footer_link">
+                <a href="#" aria-label="Privacy">Privacy</a>
+            </div>
+            <div class="footer_link">
+                <a href="#" aria-label="Support">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

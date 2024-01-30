@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    font-family:"Lucida Calligraphy", cursive, serif, sans-serif;;
+    line-height: 1.5;
+    font-size: 20px;
+  
+    
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: bisque;
+}
+.rotatesidelogo img{
+    display: flex;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    height:100px;
+    width: fit-content;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .mainlogo img {
+        animation: none; 
+    }
+}
+.headerlogoandtext img{
+    height: 280px;
+    width: fit-content;
+}
+.menu{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+.dropdown{
+    list-style: none;
+    font-size: 0.6rem; 
+    padding: 3px 1px;
+    background-color:rgb(225, 222, 179) ;
+    font-weight: bold;  
+    outline: orange dashed 1px;
+    
+}
+
+.dropdown a:hover,.dropdown a:focus {
+    transition-delay: 0.2s;
+    background-color: rgb(254, 254, 5);
+    
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgb(225, 222, 179);
+    top:100%;
+    left: 0;
+    
+}
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
+    display: flex; 
+    flex-direction: column;
+    line-height:3;
+    padding: 10px 20px;
+}
+.dropdown .dropdown-content a:hover, .dropdown .dropdown-content a:focus {
+    transition-delay: 0.2s;
+    background-color: rgb(254, 254, 5);
+    color: brown;
+}
+main {
+    background-color: rgb(225, 222, 179) ;
+    padding: 20px; 
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: left; 
+}
+input[type="name"], input[type="email"] {
+    margin-bottom: 10px;
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 20px; 
+    height: 20px; 
+    top: 35px;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    resize: vertical; 
+}
+textarea:hover, textarea:focus{
+    outline: 2px solid rgb(0, 0, 0);  
+}
+
+button[type="submit"] {
+    grid-column:span 2; 
+    place-self: center;
+    background-color: #333;
+    color: white;
+    border:none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+select{
+    width: 485.5px; 
+    height: 45px; 
+}
+
+input[type="name"]:focus,input[type="name"]:hover,
+input[type="email"]:focus,input[type="email"]:hover,
+select:focus, select:hover{
+    outline: 2px solid rgb(0, 0, 0);   
+}
+
+.focus-button:focus, .focus-button:hover{
+    outline: 3px solid rgb(255, 242, 0); 
+}
+.footer_link {
+    grid-column: span 4;
+    padding-top: 5px;
+    font-size: 0.6rem;
+}
+
+.footer_links {
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+.footer_links a:hover {
+    background-color: rgb(254, 254, 5);
+    color: brown;
+}
+.footer_links a:focus {
+    background-color: rgb(254, 254, 5);
+    color: brown;
+}
+@media (max-width: 50rem) {
+    form {
+        display: inline-block;
+    }
+    label {
+        width: 100%;
+    }
+    select {
+        width: 100%; 
+        padding: 10px;
+        border: 1px solid #9c9292;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    button[type="submit"] {
+        display: block;
+        margin: 0 auto; 
+    }
+    input[type="checkbox"] {
+        position:static;
+        width: 20px; 
+        height: 20px; 
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .footer_link {
+        margin: 0.5rem 0; 
+        text-align: center; 
+    }
+}

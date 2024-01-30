@@ -1,2 +1,0 @@
-http://placekitten.com/100/100
-http://placekitten.com/200/200

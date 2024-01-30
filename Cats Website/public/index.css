@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.skip-link {
+    position: fixed;
+    top: -40px;
+    left: 50%; 
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    transition: top 0.3s;
+}
+
+
+.skip-link:focus {
+    top: 0;
+}
+.skip-link:hover {
+    background-color: #eee;
+}
+
+header, .footer {
+    margin: 0;
+}
+
+header{
+    background-color: burlywood;
+}
+.logoAndText{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    align-items: center;
+}
+header h1 {
+    
+    padding: 1rem;
+    display: flex;
+    grid-column: span 11;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoAndText img{
+    grid-column: span 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0rem;
+}
+
+nav li {
+    display: grid;
+    justify-items: center;
+    font-size: 1.2rem;
+    grid-column: span 4;
+    border-radius: 4px;
+}
+
+nav li a:hover {
+    background-color: dodgerblue;
+    color: #eee;
+    outline: white solid 1px;
+}
+
+nav li :focus {
+  background-color: dodgerblue;
+  color: #eee;
+  outline: white solid 1px;
+  border-radius: 5px;
+}
+main{
+   background-color: papayawhip; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+  
+  .card1 {
+    border: 1px solid black;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    margin-right:0.8rem;
+    background-color: #eee;
+  }
+  .card2{
+    border: 1px solid black;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    margin-right:0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: #eee;
+  }
+  
+  .card1 img {
+    margin: 1rem 1rem 1rem 1rem; 
+    float: right;
+    width: 200px;
+    height: 200px;
+  }
+  .card2 img {
+    margin: 1rem 1rem 1rem 1rem; 
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
+
+  
+  
+  .card1_text {
+    line-height: 1.2rem;
+    flex: 1; 
+    
+  }
+  .card1_text p {
+    margin-left: 0.5rem ;
+    margin-bottom: 0.5rem; 
+  }
+
+ .card2_text{
+    line-height: 1.2rem;
+    flex: 1;
+  
+  }
+
+  .card2_text p {
+    margin-left: 0.5rem ;
+    margin-bottom: 0.5rem; 
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 1rem;
+    
+  }
+  
+
+
+.footer_links {
+    display: grid;
+    background-color: burlywood;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+}
+
+.footer_link {
+    display: flex;
+    grid-column: span 4;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+  }
+
+  @media (max-width: 44rem) {
+    .footer_link {
+      text-align: center; 
+      padding: 1rem;
+      height: 1.2rem;
+    }
+  
+    .footer_links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+     
+    }
+    .Menu {
+        display: none;
+      }
+     
+    
+      .dropdown-menu {
+        display: block;
+        top: -15px;
+        position: relative;
+      }
+      .dropdown-menu ul {
+        display: none;
+        list-style:none ;
+        position: absolute; 
+        top: 100%; 
+        right: 0; 
+        line-height:1.2rem;;
+        background-color:burlywood ;
+        
+      }
+      .dropdown-menu ul li {
+        text-align:start;
+        line-height: 1.4rem;
+    }
+      .dropdown-menu ul li:hover {
+       background-color: dodgerblue;
+
+      }
+      
+      
+      .dropdown-menu ul.hidden {
+        display: block;
+      }
+      #menu-button {
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
+      }
+      .card1 .image-and-text img, .card2 .image-and-text img {
+        width: 125px;
+        height: 125px;
+      }
+      
+      .card1{
+        margin: 0rem;
+      }
+      .card2{
+        margin: 0rem;
+        margin-bottom:3rem;
+        border-top: 0;
+      } 
+      
+      @media (prefers-reduced-motion: reduce) {
+        .skip-link {
+            transition: none; 
+        }
+      }
+      }
+      
